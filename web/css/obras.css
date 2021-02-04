@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    font-family: cursive;
+    justify-content:center;
+    background-image:url("obras-literarias.jpg");
+}
+.titulo h1 {
+  
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  -webkit-border-radius: 36px 0;
+  border-radius: 36px 0;
+  font: normal 76px/1 "berkshire-swash", Helvetica, sans-serif;
+  color: rgba(45,90,119,0.91);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(229,185,25,0.91);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5) ;
+  margin-bottom:20px;
+}
+
+.col{
+    flex-basis: 100px;
+    min-width: 740px;
+    margin: auto;
+    background:#EB984E ;
+    border:solid black 1px;
+   
+  
+}
+
+
+/*contenido de las tarjetas general*/
+.card{
+    width:250px;
+    margin:20px;
+    border-radius:6px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor:default;
+    transition: all 400ms ease;
+}
+/*movimiento de las tarjetas*/
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+/*imagenes de las tarjetas*/
+.card img{
+    width:100%;
+    height:150px;
+}
+/*contenido de la tarjeta: texto y centrado*/
+.card .contenido{
+    padding: 15px;
+    text-align:center;
+}
+/*contenido de la tarjeta etiqueta p */
+.card .contenido p{
+    line-height:1.5;
+    color: #6a6a6a;
+}
+/*contenido de la tarjeta, etiqueta h3*/
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+/*contenido de la tarjeta, etiqueta a (boton ir)*/
+.card .contenido a{
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px;
+    margin-top:10px;
+    color:white;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background: rgba(45,90,119,0.91);
+    
+}
+.cont{
+    display: flex; ;
+    margin-top:5px;
+    overflow: hidden;
+    width: 130%;
+   
+}
+

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel= "stylesheet" href="Estilo.css"></link>
+    </h:head>
+    <h:body class="enjoy-css">
+        <h:form>
+            <div class="fondo">
+                <div class="Logo">Curiosity</div>
+                <div class="titulo">Cuestionario de Matematicas</div><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 1:"/>
+                    <h:outputLabel value="Adivina cuántos años tengo sabiendo que la tercera parte de ellos menos 1 es igual a la sexta parte"/>
+                </h:panelGrid>
+                <h:panelGrid class="respuestas" columns="1">
+                    <p:selectOneRadio id="rdbPregunta1" layout="pageDirection" class="respuestas">
+                        <f:selectItem itemLabel="7" itemValue="Option1"/>
+                        <f:selectItem itemLabel="5" itemValue="Option2"/>
+                        <f:selectItem itemLabel="8" itemValue="Option3"/>
+                        <f:selectItem itemLabel="6" itemValue="Option4"/>
+                    </p:selectOneRadio>
+                </h:panelGrid>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 2:"/>
+                    <h:outputLabel value="¿A cuánto equivale π?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta2" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="3,141592" itemValue="Option1"/>
+                    <f:selectItem itemLabel="3,149215" itemValue="Option2"/>
+                    <f:selectItem itemLabel="3,144423" itemValue="Option3"/>
+                    <f:selectItem itemLabel="3,144123" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 3:"/>
+                    <h:outputLabel value="7/5 + 2/3 - 1 ="/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta3" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="17/15" itemValue="Option1"/>
+                    <f:selectItem itemLabel="8/8" itemValue="Option2"/>
+                    <f:selectItem itemLabel="1" itemValue="Option3"/>
+                    <f:selectItem itemLabel="16/15" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 4:"/>
+                    <h:outputLabel value="¿Qué formula es esta? S = π x R²"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta4" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="Diametro de un circulo" itemValue="Option1"/>
+                    <f:selectItem itemLabel="Superficie de un circulo" itemValue="Option2"/>
+                    <f:selectItem itemLabel="Volumen de un cilindro" itemValue="Option3"/>
+                    <f:selectItem itemLabel="Superficie de paralelogramos" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 5:"/>
+                    <h:outputLabel value="Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta5" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="60" itemValue="Option1"/>
+                    <f:selectItem itemLabel="60,50" itemValue="Option2"/>
+                    <f:selectItem itemLabel="61" itemValue="Option3"/>
+                    <f:selectItem itemLabel="65" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 6:"/>
+                    <h:outputLabel value="¿Qué expresa esta formula? e = mc²"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta6" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="Circunferencia de un circulo" itemValue="Option1"/>
+                    <f:selectItem itemLabel="La teoria de la probabilidad" itemValue="Option2"/>
+                    <f:selectItem itemLabel="Equivalencia entre masa y energia" itemValue="Option3"/>
+                    <f:selectItem itemLabel="Volumen de un cubo" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 7:"/>
+                    <h:outputLabel value="Juan tiene 20 años menos que su padre y este tiene el triple de los años de su hijo. ¿Qué edad tienen cada uno?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta7" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="10 Juan, 30 el padre" itemValue="Option1"/>
+                    <f:selectItem itemLabel="11 Juan, 31 el padre" itemValue="Option2"/>
+                    <f:selectItem itemLabel="12 Juan, 32 el padre" itemValue="Option3"/>
+                    <f:selectItem itemLabel="13 Juan, 33 el padre" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 8:"/>
+                    <h:outputLabel value="Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera ha dado 300 vueltas. ¿Cuántas vueltas dará la segunda?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta8" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="Si el radio mide 75 cm da 97 vueltas" itemValue="Option1"/>
+                    <f:selectItem itemLabel="Si el radio mide 75 cm da 100 vueltas" itemValue="Option2"/>
+                    <f:selectItem itemLabel="Si el radio mide 75 cm da 103 vueltas" itemValue="Option3"/>
+                    <f:selectItem itemLabel="Si el radio mide 75 cm da 111 vueltas" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 9:"/>
+                    <h:outputLabel value="¿Cuánto es la cuarta parte de la tercera parte?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta9" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="Un doceavo" itemValue="Option1"/>
+                    <f:selectItem itemLabel="Un séptimo" itemValue="Option2"/>
+                    <f:selectItem itemLabel="3/4 partes" itemValue="Option3"/>
+                    <f:selectItem itemLabel="4/6 partes" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:panelGrid columns="1" class="pregunta">
+                    <h:outputLabel value="Pregunta 10:"/>
+                    <h:outputLabel value="¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?"/>
+                </h:panelGrid>
+                <p:selectOneRadio id="rdbPregunta10" layout="pageDirection" class="respuestas">
+                    <f:selectItem itemLabel="Un 25%" itemValue="Option1"/>
+                    <f:selectItem itemLabel="Un 50%" itemValue="Option2"/>
+                    <f:selectItem itemLabel="Un 20%" itemValue="Option3"/>
+                    <f:selectItem itemLabel="Un 10%" itemValue="Option4"/>
+                </p:selectOneRadio><br/>
+                <h:commandButton value="Siguiente" class="btn btn1" action="testLengua"/>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

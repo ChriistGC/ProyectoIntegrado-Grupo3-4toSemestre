@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+body{
+    /*background:#FDFEFE;*/
+    display: flex;
+    font-family: cursive;
+    justify-content:center;
+    background-image:url('hoja.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    position:fixed;
+    /*background:#B2BABB;*/
+    height: 30px;
+   
+}
+.container .btn-menu{
+    float:left;
+    line-height: 70px;
+
+}
+.titulo{
+    height:60px;
+    margin-left:10%;
+    font-size: 35px;
+}
+
+.titulo h1 {   
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%;
+  border: none;
+  font: normal 82px/1 "permanent-marker", Helvetica, sans-serif;
+  color:#154360;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.container .menu{
+    float: right;
+    line-height: 30px;
+    
+}
+/*Menu horizontal*/
+.container .menu a{
+    padding-top:-5px;
+    display:inline-block;
+    padding: 15px 10px;
+    line-height: normal;
+    text-decoration: none;
+    color:#5F6A6A;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 17px;
+    position:relative;
+    font-weight: bold;
+}
+.container .menu a:hover{
+    border-bottom: 3px solid #0075A2 ;
+    padding: 5px 10px;
+}
+
+
+
+/*Estilos para el Menú Vertical*/
+.sidebar{
+     
+    background:#071118;   
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height:100%;
+    transition: 0.5s;
+    transition-property: left;
+     padding-top:30px;
+
+    
+}
+.sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    
+}
+.sidebar h4{
+    color:#ccc;
+    margin-top:0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: #19B3D3;
+}
+.sidebar i{
+    padding-right: 10px; 
+}
+label #sidebar_btn{
+    z-index: 1;
+    color:#ff8f00;
+    position: fixed;
+    cursor: pointer;
+    left: 10px;
+    top:10px; /*Boton 3 lineas*/
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+label #sidebar_btn:hover{
+    color: #19B3D3;
+    
+}
+
+.content{
+    margin-left: 250px;   
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+    
+}
+#check:checked ~.content{
+    margin-left: 60px;
+    
+}
+#check{
+    display: none;
+     margin-left:5px;
+     
+}
+
+
+/*contenedor de las tarjetas*/
+.contenedorTar{
+   width: 100%;
+   display: flex;
+   max-width:1200px;
+   margin-top:150px;
+   margin-left:250px;
+}
+/*contenido de las tarjetas general*/
+.card{
+    width:100%;
+    margin:20px;
+    border-radius:6px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor:default;
+    transition: all 400ms ease;
+}
+/*movimiento de las tarjetas*/
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+/*imagenes de las tarjetas*/
+.card img{
+    width:100%;
+    height:150px;
+}
+/*contenido de la tarjeta: texto y centrado*/
+.card .contenido{
+    padding: 15px;
+    text-align:center;
+}
+/*contenido de la tarjeta etiqueta p */
+.card .contenido p{
+    line-height:1.5;
+    color: #6a6a6a;
+}
+/*contenido de la tarjeta, etiqueta h3*/
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+/*contenido de la tarjeta, etiqueta a (boton ir)*/
+.card .contenido a{
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px;
+    margin-top:10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background:#D6EAF8;
+    
+}
+
+
+@font-face{
+    font-family : "myrlissa";
+    background-image: url(letra1.ttf);
+    }

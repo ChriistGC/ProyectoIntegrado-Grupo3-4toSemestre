@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family");
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body,html{
+  background-image: url('fondo-acuarela.jpg');
+}
+.titulo{
+    margin-right: 5%;
+  padding-top: 0;
+  margin-bottom: 2%;
+  font-family: "Arial", bold;
+  font-size: 55px;
+  text-align: center;
+  text-shadow: 2px 2px 2px purple , 2px 2px 2px blue ;
+  width: 100%;
+  height: 0px;
+}
+.container{
+    position: relative;
+    top:162px;
+    width: 72%;
+    height: auto;
+    margin: auto;
+    background: #bba8c2;             
+}
+.container .list-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .list-image li{
+    margin-right: 30px;
+    margin-bottom: 35px;
+    list-style:none;
+    margin-left: 22px;
+    margin-top: 20px;
+    
+}
+.container .list-image li .container_image{
+    position:relative;
+    width: 250px;
+    height: 190px;
+    background: #fff;
+    border-radius: 3px;
+    
+}
+.container .list-image li .container_image img{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.container .list-image li .container_image .informacion_image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+.container .list-image li .container_image .informacion_image .nombre__image{
+    font-family: "Open Sans";
+    font-size: 16px;
+    margin-left: 8px;
+    
+}
+.container .list-image li .container_image .informacion_image .ventana_infor{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    display: block;
+    padding: 6px 12px;
+    height: 15px;
+    padding-bottom: 2px;
+    line-height: 12px;
+    width: auto;
+    text-decoration: none;
+    color: #888;
+    font-family: "Open Sans";
+    font-size: 14px;
+    border-radius: 90px;
+    border: 2px solid #888;
+}

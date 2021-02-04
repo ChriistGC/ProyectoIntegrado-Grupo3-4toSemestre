@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel= "stylesheet" href="Estilo2.css"></link>
+    </h:head>
+    <h:body  class="Fondoregistro">
+        <h:form>
+            
+            <div class="Logo">Curiosity</div>
+            <script type="text/javascript" script-name="permanent-marker" src="http://use.edgefonts.net/permanent-marker.js"></script>
+            <br/><div class="Titulo2">Registro de usuarios</div><br/>
+            <h:panelGrid class="Registro" columns="1">
+                
+                <br/><h:outputLabel class="letrareg" for="txtCedula" value="Cedula:" />
+                <script type="text/javascript" script-name="amaranth" src="http://use.edgefonts.net/amaranth.js"></script>
+                <h:inputText id="txtCedula" class="enjoy-css" />
+
+
+                <h:outputLabel class="letrareg" for="txtNombres" value="Nombres:"/>
+                <h:inputText id="txtNombres"/>
+
+
+                <h:outputLabel class="letrareg" for="txtApellidos" value="Apellidos:"/>
+                <h:inputText id="txtApellidos" />
+
+
+                <h:outputLabel class="letrareg" for="txtCorreo" value="Correo:"/>
+                <h:inputText id="txtCorreo" />
+
+
+                <h:outputLabel class="letrareg" for="txtUsuario" value="Usuario:"/>
+                <h:inputText id="txtUsuario" />
+
+
+                <h:outputLabel class="letrareg" for="txtcontraseña" value="Contraseña:"/>
+                <h:inputSecret id="txtcontraseña" /><br/>
+                <h:commandButton value="REGISTRARSE" class="btn btn1" action="index"/>
+            </h:panelGrid>
+           
+        </h:form>
+    </h:body>
+</html>
+
